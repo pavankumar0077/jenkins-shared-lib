@@ -1,4 +1,4 @@
-def call(credentialsId, String dockerhub, String ImageName, String ImageTag){
+def call(String dockerhub, String ImageName, String ImageTag){
     withDockerRegistry(credentialsId: credentialsId)
 
     sh """
